@@ -4,10 +4,6 @@ date: '2026-08-11T15:50:23+08:00'
 draft: false
 lastmod: '2026-08-11T15:50:23+08:00'
 
-# 摘要和描述
-summary: ""
-description: ""
-
 categories: [notes]
 tags: [Hugo]
 
@@ -22,7 +18,7 @@ author: "zhang-shanfeng"
 showtoc: true
 comments: true
 
-keywords: []
+keywords: ['Hugo']
 ---
 
 `Hugo` 博客搭建完成了，特此写一篇文章记录下搭建过程和相关配置等。
