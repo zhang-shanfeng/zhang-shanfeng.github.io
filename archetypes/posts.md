@@ -12,9 +12,9 @@ categories: ['frontend', 'electronics', 'notes', 'sharing']
 tags: []
 
 cover:
-  image: "/images/cover.jpg"
-  alt: ""
-  caption: ""
+  image: "/posts/cover.jpg"
+  alt: "cover"
+  caption: "cover"
 
 # 作者
 author: "zhang-shanfeng"

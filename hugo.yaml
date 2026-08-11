@@ -24,7 +24,7 @@ params:
   description: "这是一个个人博客网站，核心关注领域：电子技术与编程开发，另外该网站也是我学习工作中用作记录笔记的地方，欢迎大家访问我的网站。"
   keywords: [Blog, ESP32, PCB, Tauri, Vue, FreeRTOS, Linux, 电子仪器, 数据采集电路, 数据生成, 数据分析, 工具软件, sfeekit]
   author: zhang-shanfeng
-  images: ./assets/icons/128x128.png
+  images: ["/icons/128x128.png"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
@@ -54,21 +54,6 @@ params:
     text: "zhang-shanfeng Blog"
     icon: /icons/64x64.png
     iconHeight: 35
-
-  # profile-mode
-  profileMode:
-    enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
-    imageUrl: "/icons/128x128.png"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: my image
-    buttons:
-      - name: Posts
-        url: posts
-      - name: Tags
-        url: tags
 
   # home-info mode
   homeInfoParams:
