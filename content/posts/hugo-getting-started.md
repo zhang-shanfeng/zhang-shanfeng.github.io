@@ -555,3 +555,62 @@ A =
 
 
 ## 使用 GitHub Actions 自动化部署
+
+在项目根目录创建：`.github\workflows` 目录，在workflows下创建  `gh-pages.yml` 文件，内容如下：
+
+```yml
+name: Deploy Hugo site to Pages
+
+on:
+  push:
+    branches: ["main"] # 监听 main 分支推送
+  workflow_dispatch:   # 允许手动触发
+
+# 设置权限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 避免并发冲突
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.164.0'
+          extended: true
+
+      - name: Build with Hugo
+        run: hugo --minify
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./public
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+```
+
+设置 Github 仓库 Pages 页面，Build and deployment 下的 Source 选择 `Github Actions`，然后就可以用 `git push` 推送仓库了，之后 `Github Actions` 就会自动化完成部署。
