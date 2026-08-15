@@ -1,7 +1,7 @@
 baseURL: https://zhang-shanfeng.github.io
 locale: zh-CN
 paginate: 10
-title: zhang-shanfeng Blog
+title: Zhang Shanfeng's Blog
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -21,7 +21,7 @@ outputs:
     - JSON
 
 params:
-  title: zhang-shanfeng Blog
+  title: Zhang Shanfeng's Blog
   description: "这是一个个人博客网站，核心关注领域：电子技术与编程开发，另外该网站也是我学习工作中用作记录笔记的地方，欢迎大家访问我的网站。"
   keywords: [Blog, ESP32, PCB, Tauri, Vue, FreeRTOS, Linux, 电子仪器, 数据采集电路, 数据生成, 数据分析, 工具软件, sfeekit]
   author: zhang-shanfeng
@@ -54,7 +54,7 @@ params:
     favicon32x32: "/icons/32x32.png"
 
   label:
-    text: "zhang-shanfeng Blog"
+    text: "Zhang Shanfeng's Blog"
     icon: /icons/64x64.png
     iconHeight: 35
 

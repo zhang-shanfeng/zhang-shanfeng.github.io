@@ -9,12 +9,12 @@ summary: ""
 description: ""
 
 categories: ['frontend']
-tags: []
+tags: ['Shadcn-vue', 'Vue']
 
 cover:
-  image: "/posts/cover.jpg"
-  alt: "cover"
-  caption: "cover"
+  image: "/posts/shadcn-vue.png"
+  alt: "shadcn-vue"
+  caption: "shadcn-vue"
 
 # 作者
 author: "zhang-shanfeng"
