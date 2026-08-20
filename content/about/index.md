@@ -12,7 +12,7 @@ description: "核心关注领域：电子技术与编程开发。"
 - Tauri | Vue | Docker
 - vsCode | Zed
 - 模电电路 | 嵌入式
-- 千问
+- DeepSeek
 
 ### 📬 联系方式
 
