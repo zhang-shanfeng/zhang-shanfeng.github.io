@@ -1,7 +1,7 @@
 ---
 title: 'English Syllable Division Note'
 date: '2026-08-15T23:49:22+08:00'
-draft: true
+draft: false
 lastmod: '2026-08-15T23:49:22+08:00'
 
 # 摘要和描述
@@ -22,7 +22,7 @@ author: "zhang-shanfeng"
 showtoc: true
 comments: true
 
-keywords: []
+keywords: [English, 英语单词音节划分]
 ---
 
 英语单词是怎么划分音节的？这是我要问的，下面就整理以下 AI 给我的回答。
