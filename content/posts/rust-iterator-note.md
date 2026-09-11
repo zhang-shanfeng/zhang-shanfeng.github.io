@@ -747,7 +747,7 @@ let numbers = [1, 3, 5, 8];
 
 let has_even = numbers
     .iter()
-    .any(|x| **x % 2 == 0);
+    .any(|x| *x % 2 == 0);
 
 println!("{has_even}");
 ```
@@ -769,7 +769,7 @@ let numbers = [2, 4, 6, 8];
 
 let all_even = numbers
     .iter()
-    .all(|x| **x % 2 == 0);
+    .all(|x| *x % 2 == 0);
 
 println!("{all_even}");
 ```
@@ -787,7 +787,7 @@ let numbers = [2, 4, 5, 8];
 
 let all_even = numbers
     .iter()
-    .all(|x| **x % 2 == 0);
+    .all(|x| *x % 2 == 0);
 ```
 
 结果就是：
