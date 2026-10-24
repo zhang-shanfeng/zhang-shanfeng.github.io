@@ -11,10 +11,7 @@ description: ""
 categories: ['electronics']
 tags: [AT32, DWT, us]
 
-cover:
-  image: "/posts/cover.jpg"
-  alt: "cover"
-  caption: "AT32 DWT us 延时"
+cover: "/images/posts/cover.jpg"
 
 # 作者
 author: "zhang-shanfeng"
@@ -26,6 +23,8 @@ keywords: []
 ---
 
 在这里分享自己的一份使用 DWT (Data Watchpoint and Trace) 计数器实现的 us 延时，该函数使用 DWT 的 CYCCNT 计数器来实现微秒级延时。
+
+<!--more-->
 
 ## 头文件
 

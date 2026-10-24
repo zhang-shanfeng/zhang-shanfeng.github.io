@@ -11,10 +11,7 @@ description: ""
 categories: ['electronics']
 tags: ["运放", "BJT"]
 
-cover:
-  image: "/posts/cover.jpg"
-  alt: "cover"
-  caption: "cover"
+cover: "/images/posts/cover.jpg"
 
 # 作者
 author: "zhang-shanfeng"
@@ -26,6 +23,8 @@ keywords: []
 ---
 
 在这里分享一个用运放驱动三极管推挽电路的最简方法，电路中用一个 TL072 运放和两个三极管 BD139\BD140 组成了一个最简单的试验电路，该电路并不完美拿来学习是比较好的例子，下面就分析一下这个电路：
+
+<!--more-->
 
 !["TL072-PNP-NPN-01"](/images/posts/TL072-PNP-NPN-01.png)
 

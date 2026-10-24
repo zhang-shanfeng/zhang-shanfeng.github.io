@@ -11,10 +11,7 @@ description: ""
 categories: ['notes']
 tags: ['Dart']
 
-cover:
-  image: "/posts/cover.jpg"
-  alt: "cover"
-  caption: "cover"
+cover: "/images/posts/cover.jpg"
 
 # 作者
 author: "zhang-shanfeng"
@@ -26,6 +23,8 @@ keywords: []
 ---
 
 这是一篇 Dart 语言语法笔记，用于时常回顾与加强 Drat 语法的记忆。
+
+<!--more-->
 
 ## 基础变量类型
 

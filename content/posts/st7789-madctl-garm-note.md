@@ -11,10 +11,7 @@ description: ""
 categories: ['electronics']
 tags: [ST7789]
 
-cover:
-  image: "/posts/cover.jpg"
-  alt: "cover"
-  caption: "ST7789 显示方向控制"
+cover: "/images/posts/cover.jpg"
 
 # 作者
 author: "zhang-shanfeng"
@@ -26,6 +23,8 @@ keywords: [ST7789, '方向控制']
 ---
 
 ST7789 是一款通用控制器，设计上支持最大 240×320 的 GRAM。但面板厂商可以：
+
+<!--more-->
 
 - 做 240×320 的全尺寸面板 → 1:1 对应
 - 做 172×320 的小尺寸面板 → 只用 GRAM 的一部分

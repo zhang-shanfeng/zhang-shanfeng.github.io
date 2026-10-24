@@ -1,135 +1,203 @@
 baseURL: https://zhang-shanfeng.github.io
-locale: zh-CN
+defaultContentLanguage: zh
+locale: "zh-Hans"
 paginate: 10
 title: Zhang Shanfeng's Blog
-theme: PaperMod
+theme: dream #PaperMod
+
 
 enableRobotsTXT: true
-buildDrafts: false
-buildFuture: false
-buildExpired: false
-
-minify:
-  disableXML: true
-  minifyOutput: true
-
-# 必须配置，否则不会生成搜索索引
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
+hasCJKLanguage: true
 
 params:
-  title: Zhang Shanfeng's Blog
+  # zenMode: true
+  lightTheme: "emerald"
+  darkTheme: "forest"
+
+  backgroundImage: "img/global-background.jpg"
+  backgroundImageDark: "img/global-background-dark.jpg"
+
+  # images: "img/global-background.jpg"
+  author: "Zhang ShanFeng"
   description: "这是一个个人博客网站，核心关注领域：电子技术与编程开发，另外该网站也是我学习工作中用作记录笔记的地方，欢迎大家访问我的网站。"
-  keywords: [Blog, ESP32, PCB, Tauri, Vue, FreeRTOS, Linux, 电子仪器, 数据采集电路, 数据生成, 数据分析, 工具软件, sfeekit]
-  author: zhang-shanfeng
-  images: ["/icons/128x128.png"]
-  DateFormat: "January 2, 2006"
-  defaultTheme: light # dark, light
-  disableThemeToggle: false
+  avatar: "img/personal/avatar.jpg"
+  headerTitle: "Zhang Shanfeng's Blog"
+  motto: "与其感慨路难行，不如马上出发。"
 
-  ShowReadingTime: true
-  ShowShareButtons: true
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: true
-  ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
-  disableSpecial1stPost: false
-  disableScrollToTop: false
-  comments: false
-  hidemeta: false
-  hideSummary: false
-  showtoc: true
-  tocopen: false
+# footerBottomText = ""
 
+  rss: true
 
+  #utterancesRepo: "g1eny0ung/g1eny0ung.github.io"
 
+# valine = true
+# LEANCLOUD_APP_ID = ""
+# LEANCLOUD_APP_KEY = ""
 
-  assets:
-    favicon: "/icons/icon.ico"
-    favicon32x32: "/icons/32x32.png"
+# waline = true
+# walineServer = ""
 
-  label:
-    text: "Zhang Shanfeng's Blog"
-    icon: /icons/64x64.png
-    iconHeight: 35
+  email: "freerealmshn@gmail.com"
 
-  # home-info mode
-  homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+  siteStartYear: 2026
 
-  socialIcons:
-    - name: "github"
-      url: "https://github.com/zhang-shanfeng"
-    - name: "reddit"
-      url: "https://www.reddit.com/user/SamZhang-90/"
-    - name: "bilibili"
-      url: "https://space.bilibili.com/334715750"
-    - name: "rss"
-      url: "https://zhang-shanfeng.github.io/sitemap.xml"
+  favicon: "favicon.ico"
 
-  # for search
-  # https://fusejs.io/api/options.html
-  fuseOpts:
-    isCaseSensitive: false
-    shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
-    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
-    keys: ["title", "permalink", "summary", "content"]
+# Syntax highlighting
+  customSyntaxHighlighting: true
 
-  cover:
-      hidden: false # hide everywhere but not in structured data
-      hiddenInList: true # hide on list pages and home
-      hiddenInSingle: false # hide on single page
+  # options
+  stickyNav: true
+  reorderNavItems: ["about", "search", "rss", "posts", "categories", "tags"]
+  # collapseNavItems: ["posts", "categories", "tags"]
+  noDefaultSummaryCover: true
+  showTableOfContents: true
+  showSummaryCoverInPost: true
+  imageZoomableInPost: true
+  showPrevNextPost: true
+  # reorderShares = ["x", "facebook", "whatsapp"]
 
-menu:
-  main:
-    - identifier: about
-      name: About
-      pageRef: /about/
-      weight: 30
-    - identifier: tags
-      name: Tags
-      url: "/tags/"
-      weight: 20
-    - identifier: categories
-      name: Categories
-      url: "/categories/"
-      weight: 10
-    - identifier: archives
-      name: Archive
-      url: "/archives/"
-      weight: 10
-    - identifier: search
-      name: Search
-      url: "/search/"
-      weight: 10
+  advanced:
+    customCSS: ["css/custom.css"]
+    customJS: ["js/custom.js"]
+
+  # experimental:
+  #   jsDate: true
+  #   jsDateFormat: "2026年02月01日"
 
 markup:
   goldmark:
-    renderer:
-      hardWraps: false
-      unsafe: true
-      xhtml: false
     extensions:
       passthrough:
         enable: true
         delimiters:
           block:
-            - - '\['
-              - '\]'
-            - - '$$'
-              - '$$'
+            - ['\[', '\]']
+            - ['$$', '$$']
           inline:
-            - - '\('
-              - '\)'
-            - - '$'
-              - '$'
+            - ['\(', '\)']
+            - ['$', '$']
+  highlight:
+    noClasses: false
+    lineNos: true
+    lineNumbersInTable: false
+    style: github
+
+services:
+  googleAnalytics:
+    id: G-X2W6T1HYZZ
+
+#
+# params:
+#   title: Zhang Shanfeng's Blog
+#   description: "这是一个个人博客网站，核心关注领域：电子技术与编程开发，另外该网站也是我学习工作中用作记录笔记的地方，欢迎大家访问我的网站。"
+#   keywords: [Blog, ESP32, PCB, Tauri, Vue, FreeRTOS, Linux, 电子仪器, 数据采集电路, 数据生成, 数据分析, 工具软件, sfeekit]
+#   author: zhang-shanfeng
+#   images: ["/icons/128x128.png"]
+#   DateFormat: "January 2, 2006"
+#   defaultTheme: light # dark, light
+#   disableThemeToggle: false
+#
+#   ShowReadingTime: true
+#   ShowShareButtons: true
+#   ShowPostNavLinks: true
+#   ShowBreadCrumbs: true
+#   ShowCodeCopyButtons: true
+#   ShowWordCount: true
+#   ShowRssButtonInSectionTermList: true
+#   UseHugoToc: true
+#   disableSpecial1stPost: false
+#   disableScrollToTop: false
+#   comments: false
+#   hidemeta: false
+#   hideSummary: false
+#   showtoc: true
+#   tocopen: false
+#
+#
+#
+#
+#   assets:
+#     favicon: "/icons/icon.ico"
+#     favicon32x32: "/icons/32x32.png"
+#
+#   label:
+#     text: "Zhang Shanfeng's Blog"
+#     icon: /icons/64x64.png
+#     iconHeight: 35
+#
+#   # home-info mode
+#   homeInfoParams:
+#     Title: "Hi there \U0001F44B"
+#     Content: Welcome to my blog
+#
+#   socialIcons:
+#     - name: "github"
+#       url: "https://github.com/zhang-shanfeng"
+#     - name: "reddit"
+#       url: "https://www.reddit.com/user/SamZhang-90/"
+#     - name: "bilibili"
+#       url: "https://space.bilibili.com/334715750"
+#     - name: "rss"
+#       url: "https://zhang-shanfeng.github.io/sitemap.xml"
+#
+#   # for search
+#   # https://fusejs.io/api/options.html
+#   fuseOpts:
+#     isCaseSensitive: false
+#     shouldSort: true
+#     location: 0
+#     distance: 1000
+#     threshold: 0.4
+#     minMatchCharLength: 0
+#     limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+#     keys: ["title", "permalink", "summary", "content"]
+#
+#   cover:
+#       hidden: false # hide everywhere but not in structured data
+#       hiddenInList: true # hide on list pages and home
+#       hiddenInSingle: false # hide on single page
+#
+# menu:
+#   main:
+#     - identifier: about
+#       name: About
+#       pageRef: /about/
+#       weight: 30
+#     - identifier: tags
+#       name: Tags
+#       url: "/tags/"
+#       weight: 20
+#     - identifier: categories
+#       name: Categories
+#       url: "/categories/"
+#       weight: 10
+#     - identifier: archives
+#       name: Archive
+#       url: "/archives/"
+#       weight: 10
+#     - identifier: search
+#       name: Search
+#       url: "/search/"
+#       weight: 10
+#
+# markup:
+#   goldmark:
+#     renderer:
+#       hardWraps: false
+#       unsafe: true
+#       xhtml: false
+#     extensions:
+#       passthrough:
+#         enable: true
+#         delimiters:
+#           block:
+#             - - '\['
+#               - '\]'
+#             - - '$$'
+#               - '$$'
+#           inline:
+#             - - '\('
+#               - '\)'
+#             - - '$'
+#               - '$'

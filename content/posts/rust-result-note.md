@@ -11,10 +11,7 @@ description: ""
 categories: ['notes']
 tags: [Rust, Result]
 
-cover:
-  image: "/posts/cover.jpg"
-  alt: "cover"
-  caption: "Rust Result"
+cover: "/images/posts/cover.jpg"
 
 # 作者
 author: "zhang-shanfeng"
@@ -26,6 +23,8 @@ keywords: [Rust, Result, main]
 ---
 
 在学习 Rust 的过程中，经常会看到这样的代码：
+
+<!--more-->
 
 ```rust
 fn main() -> Result<(), Box<dyn std::error::Error>> {

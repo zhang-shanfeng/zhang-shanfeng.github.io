@@ -1,20 +1,13 @@
 ---
-title: '{{ replace .File.ContentBaseName "-" " " | title }}'
+title: '{{ replace .TranslationBaseName "-" " " | title }}'
 date: '{{ .Date }}'
 draft: true
 lastmod: '{{ .Date }}'
 
-# 摘要和描述
-summary: ""
-description: ""
-
 categories: ['frontend', 'electronics', 'notes', 'sharing']
 tags: []
 
-cover:
-  image: "/posts/cover.jpg"
-  alt: "cover"
-  caption: "cover"
+cover: "/images/posts/cover.jpg"
 
 # 作者
 author: "zhang-shanfeng"
@@ -24,3 +17,7 @@ comments: true
 
 keywords: []
 ---
+
+摘要
+
+<!--more-->

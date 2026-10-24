@@ -11,10 +11,7 @@ description: ""
 categories: ['frontend', 'electronics', 'notes', 'sharing']
 tags: []
 
-cover:
-  image: "/posts/cover.jpg"
-  alt: "cover"
-  caption: "cover"
+cover: "/images/posts/cover.jpg"
 
 # 作者
 author: "zhang-shanfeng"
@@ -26,6 +23,8 @@ keywords: ['C语言','宏定义','条件宏']
 ---
 
 记录以下 C 语言的宏定义、条件判断、推荐写法等。
+
+<!--more-->
 
 ## 用 1/0 值宏作为判断条件（编译开关）
 

@@ -11,10 +11,7 @@ description: ""
 categories: ['notes']
 tags: ['Flutter']
 
-cover:
-  image: "/posts/cover.jpg"
-  alt: "Flutter"
-  caption: "Flutter"
+cover: "/images/posts/cover.jpg"
 
 # 作者
 author: "zhang-shanfeng"
@@ -26,6 +23,8 @@ keywords: []
 ---
 
 下面是我整理的一份 Flutter 命令使用的文档，涵盖日常开发中所有常用的命令。
+
+<!--more-->
 
 ## 全局选项
 

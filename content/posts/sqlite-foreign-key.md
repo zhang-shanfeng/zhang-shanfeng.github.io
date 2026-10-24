@@ -11,10 +11,7 @@ description: ""
 categories: ['notes']
 tags: ['SQL', 'SQLite']
 
-cover:
-  image: "/posts/cover.jpg"
-  alt: "cover"
-  caption: "cover"
+cover: "/images/posts/cover.jpg"
 
 # 作者
 author: "zhang-shanfeng"
@@ -26,6 +23,8 @@ keywords: []
 ---
 
 外键（`Foreign Key`） 是关系数据库中用于建立表与表之间关联的字段，它引用另一张表的主键或唯一键。
+
+<!--more-->
 
 它的核心作用有两点：
 

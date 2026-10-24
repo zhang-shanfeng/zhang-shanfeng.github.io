@@ -1,31 +1,16 @@
 ---
 title: 'AT32 GPIO 相关笔记'
-date: '2026-10-02T20:30:40+08:00'
 draft: true
-lastmod: '2026-10-02T20:30:40+08:00'
 
-# 摘要和描述
-summary: ""
-description: ""
-
-categories: ['electronics']
+categories: [Electronics]
 tags: []
-
-cover:
-  image: "/posts/cover.jpg"
-  alt: "cover"
-  caption: "cover"
-
-# 作者
-author: "zhang-shanfeng"
-
-showtoc: true
-comments: true
-
+cover: "/images/posts/cover.jpg"
 keywords: ['AT32', 'GPIO']
 ---
 
 记录 AT32 的**GPIO**相关笔记，如：相关函数、常用的寄存器操作、IO 翻转状态等。
+
+<!--more-->
 
 ## IO 翻转 Toggle
 

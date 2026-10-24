@@ -11,10 +11,7 @@ description: ""
 categories: ['notes']
 tags: ['Tauri', 'Android']
 
-cover:
-  image: "/posts/cover.jpg"
-  alt: "cover"
-  caption: "cover"
+cover: "/images/posts/cover.jpg"
 
 # 作者
 author: "zhang-shanfeng"
@@ -26,6 +23,8 @@ keywords: []
 ---
 
 在已有的 Tauri 项目中添加 Android 支持怎么做？下面就记录下怎么在一个已有的 Tauri 项目中初始化并允许一个 Android 项目。
+
+<!--more-->
 
 首先我们要有一个 Tauri 项目，我们可以用 `pnpm create tauri-app`  命令来创建一个项目，创建后怎么添加 `Android` 支持，其实很简单只要运行初始化命令即可：
 

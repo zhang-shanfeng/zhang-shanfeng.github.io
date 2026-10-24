@@ -11,10 +11,7 @@ description: ""
 categories: ['notes',]
 tags: ['Rust', 'Closure', 'Trait']
 
-cover:
-  image: "/posts/cover.jpg"
-  alt: "cover"
-  caption: "Rust Closure"
+cover: "/images/posts/cover.jpg"
 
 # 作者
 author: "zhang-shanfeng"
@@ -27,6 +24,8 @@ keywords: ['Rust', 'Closure', 'Trait']
 
 
 最近学习 Rust 的时候，我发现闭包是一个绕不开的东西。
+
+<!--more-->
 
 刚开始接触闭包时，感觉它其实没有什么特别的：
 

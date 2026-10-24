@@ -11,10 +11,7 @@ description: ""
 categories: ['notes']
 tags: ['Rust', 'Iterator']
 
-cover:
-  image: "/posts/cover.jpg"
-  alt: "cover"
-  caption: "Rust Iterator"
+cover: "/images/posts/cover.jpg"
 
 # 作者
 author: "zhang-shanfeng"
@@ -26,6 +23,8 @@ keywords: ['Rust', 'Iterator']
 ---
 
 在学习 Rust 的过程中，`Iterator` 是一个很容易遇到的东西。
+
+<!--more-->
 
 刚开始看到：
 

@@ -11,10 +11,7 @@ description: ""
 categories: ['notes']
 tags: [Litecli]
 
-cover:
-  image: "/posts/cover.jpg"
-  alt: "cover"
-  caption: "cover"
+cover: "/images/posts/cover.jpg"
 
 # 作者
 author: "zhang-shanfeng"
@@ -26,6 +23,8 @@ keywords: [Litecli, 乱码]
 ---
 
 `Litecli` 是一款用于 `SQLite` 数据库的命令行客户端，具有自动补全和语法高亮功能。
+
+<!--more-->
 
 官方仓库：https://github.com/dbcli/litecli
 

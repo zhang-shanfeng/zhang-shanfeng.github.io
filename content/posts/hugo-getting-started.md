@@ -7,10 +7,7 @@ lastmod: '2026-08-11T15:50:23+08:00'
 categories: [notes]
 tags: [Hugo]
 
-cover:
-  image: "/posts/cover.jpg"
-  alt: "cover"
-  caption: "cover"
+cover: "/images/posts/cover.jpg"
 
 # 作者
 author: "zhang-shanfeng"
@@ -22,6 +19,8 @@ keywords: ['Hugo']
 ---
 
 `Hugo` 博客搭建完成了，特此写一篇文章记录下搭建过程和相关配置等。
+
+<!--more-->
 
 - `Hugo` 官网：[https://gohugo.io/](https://gohugo.io/ "Hugo 官网")
 - 官网快速入门教程：[https://gohugo.io/getting-started/quick-start/](https://gohugo.io/getting-started/quick-start/ "官网快速入门教程")

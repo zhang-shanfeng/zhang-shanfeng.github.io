@@ -11,10 +11,7 @@ description: ""
 categories: ['sharing']
 tags: ['English']
 
-cover:
-  image: "/posts/cover.jpg"
-  alt: "cover"
-  caption: "英语学习资源收藏"
+cover: "/images/posts/pexels-rk-photography-30313903.jpg"
 
 # 作者
 author: "zhang-shanfeng"
@@ -26,6 +23,8 @@ keywords: ['English', '学习资源', '音标发音', '单词发音']
 ---
 
 分享一些自己收藏的英语学习资源：
+
+<!--more-->
 
 ## 网站
 

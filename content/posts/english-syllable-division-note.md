@@ -11,10 +11,7 @@ description: ""
 categories: ['sharing']
 tags: ['English']
 
-cover:
-  image: "/posts/pexels-rk-photography-30313903.jpg"
-  alt: "English"
-  caption: "English"
+cover: "/images/posts/pexels-rk-photography-30313903.jpg"
 
 # 作者
 author: "zhang-shanfeng"
@@ -26,6 +23,8 @@ keywords: [English, 英语单词音节划分]
 ---
 
 英语单词是怎么划分音节的？这是我要问的，下面就整理以下 AI 给我的回答。
+
+<!--more-->
 
 ## `a` `e` `i` `o` `u` 到底是什么？
 

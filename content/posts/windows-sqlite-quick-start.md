@@ -11,10 +11,7 @@ description: ""
 categories: ['notes',]
 tags: ['SQLite']
 
-cover:
-  image: "/posts/cover.jpg"
-  alt: "cover"
-  caption: "cover"
+cover: "/images/posts/cover.jpg"
 
 # 作者
 author: "zhang-shanfeng"
@@ -26,6 +23,8 @@ keywords: ['Windows', 'SQLite', '数据库']
 ---
 
 记录一下在 Windows 下安装搭建 SQLite 的学习环境，包括下载安装、使用 GUI 管理数据库和基础的使用练习。
+
+<!--more-->
 
 ## 下载安装
 

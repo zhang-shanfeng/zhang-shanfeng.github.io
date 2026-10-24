@@ -11,10 +11,7 @@ description: ""
 categories: ['electronics']
 tags: ['NE555']
 
-cover:
-  image: "/posts/cover.jpg"
-  alt: "cover"
-  caption: "NE555"
+cover: "/images/posts/cover.jpg"
 
 # 作者
 author: "zhang-shanfeng"
@@ -26,6 +23,8 @@ keywords: ['NE555']
 ---
 
 **NE555** 是一款集成精密计时器芯片，能够实现延时、震荡等多种功能。通过外部简单的电阻、电容就能实现各种实用的功能。下面我们来看看这个芯片怎么实用。
+
+<!--more-->
 
 下图是 **NE555** 内部的简化原理图：
 

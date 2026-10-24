@@ -1,0 +1,38 @@
+/*.highlight pre {
+  padding: 1rem;
+  white-space: pre;
+  overflow-x: auto;
+}*/
+
+html.dark #dream-global-bg {
+    background-image: url(/img/global-background-dark.jpg);
+    background-color: rgba(0,0,0,0.72);
+    background-blend-mode: multiply;
+}
+
+.highlight {
+  overflow-x: auto;
+  border-radius: 0.5rem;
+  position: relative;
+}
+.highlight pre {
+  margin: 0;
+  padding: 8px 8px 8px 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  line-height: 1.4;
+  white-space: pre;
+}
+.highlight .ln {
+  display: inline-block;
+  min-width: 2.8rem;
+  padding-right: 0.6rem;
+  margin-right: 0.4rem;
+  text-align: right;
+  user-select: none;
+  color: #9ca3af;
+  border-right: 1px solid rgba(156, 163, 175, 0.25);
+}
+.dark .highlight .ln {
+  color: #6b7280;
+  border-right-color: rgba(107, 114, 128, 0.25);
+}

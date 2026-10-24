@@ -11,10 +11,8 @@ description: "记录 TailwindCSS V4 中预定义的颜色的使用方法、不�
 categories: ['frontend']
 tags: ["TailwindCSS"]
 
-cover:
-  image: "/posts/tailwindcss.png"
-  alt: "TailwindCSS"
-  caption: "TailwindCSS"
+cover: "/images/posts/tailwindcss.png"
+
 
 # 作者
 author: "zhang-shanfeng"
@@ -27,6 +25,7 @@ keywords: [TailwindCSS, CSS]
 
 今天记录一下 TailwindCSS V4 中颜色的使用和不透明度用法等，没有深入学习的时候会发现代码中有这样的写法：`class="bg-black/50"` 就是把 `bg-black`颜色的不透明度转换为 `50%`，不经过专门查询还真不知道有这样的语法，特此记录一下。
 
+<!--more-->
 
 ## 内置的调色板
 

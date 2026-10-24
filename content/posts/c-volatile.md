@@ -1,20 +1,13 @@
 ---
 title: '聊聊 C 语言里的 volatile：到底什么时候该用，什么时候是瞎用'
-date: '2026-10-02T21:14:25+08:00'
+date: '2026-10-02'
 draft: false
-lastmod: '2026-10-02T21:14:25+08:00'
-
-# 摘要和描述
-summary: '写单片机代码的人，迟早都会碰到 \`volatile\` 这个关键字。网上的说法五花八门，有说"中断里用到的变量都要加"的，有说"加了就线程安全了"的，还有干脆所有全局变量都糊上一层 `volatile` 图个心安的。我自己也踩过不少坑，这篇就把这些年攒下来的经验捋一捋，希望能帮你少绕点弯路。'
-description: ""
+lastmod: '2026-10-02'
 
 categories: ['electronics']
 tags: ['C语言']
 
-cover:
-  image: "/posts/cover.jpg"
-  alt: "cover"
-  caption: "cover"
+cover: "/images/posts/cover.jpg"
 
 # 作者
 author: "zhang-shanfeng"
@@ -25,7 +18,9 @@ comments: true
 keywords: ['volatile', 'C语言']
 ---
 
-# 聊聊 C 语言里的 volatile：到底什么时候该用，什么时候是瞎用
+聊聊 C 语言里的 volatile：到底什么时候该用，什么时候是瞎用
+
+<!--more-->
 
 写单片机代码的人，迟早都会碰到 `volatile` 这个关键字。网上的说法五花八门，有说"中断里用到的变量都要加"的，有说"加了就线程安全了"的，还有干脆所有全局变量都糊上一层 `volatile` 图个心安的。我自己也踩过不少坑，这篇就把这些年攒下来的经验捋一捋，希望能帮你少绕点弯路。
 

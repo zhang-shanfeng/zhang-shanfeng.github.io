@@ -11,10 +11,7 @@ description: ""
 categories: ['frontend']
 tags: ['Shadcn-vue', 'Vue']
 
-cover:
-  image: "/posts/shadcn-vue.png"
-  alt: "shadcn-vue"
-  caption: "shadcn-vue"
+cover: "/images/posts/cover.jpg"
 
 # 作者
 author: "zhang-shanfeng"
@@ -26,6 +23,8 @@ keywords: ["shadcn-vue", "vue", "Sidebar", "Mobile", "auto hidden"]
 ---
 
 `Shadcn-vue` 的 `Sidebar` 移动端抽屉打开后，点击导航链接不会自动关闭抽屉，需要点击空白区域才关闭，这篇文章就是记录怎么实现点击链接后自动关闭“抽屉”的。
+
+<!--more-->
 
 关闭抽屉我们可以调用 `setOpenMobile(false)`，那么方法一就是在每一个 Vue 的路由链接上调用该方法就能实现。
 
