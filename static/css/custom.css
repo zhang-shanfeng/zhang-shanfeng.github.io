@@ -36,3 +36,17 @@ html.dark #dream-global-bg {
   color: #6b7280;
   border-right-color: rgba(107, 114, 128, 0.25);
 }
+
+.prose {
+    :root & {
+        :where(code):not(pre > code) {
+            background-color: var(--color-base-200);
+            border-radius: 0;
+            border: var(--border) solid var(--color-base-300);
+            padding-inline: 0.2em;
+            padding-block: 0.1em;
+            font-weight: 400;
+            color: #e74c3c;
+        }
+    }
+}
