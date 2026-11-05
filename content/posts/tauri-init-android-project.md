@@ -4,17 +4,10 @@ date: '2026-08-14T23:39:58+08:00'
 draft: true
 lastmod: '2026-08-14T23:39:58+08:00'
 
-# 摘要和描述
-summary: ""
-description: ""
-
 categories: ['notes']
 tags: ['Tauri', 'Android']
 
 cover: "/images/posts/cover.jpg"
-
-# 作者
-author: "zhang-shanfeng"
 
 showtoc: true
 comments: true

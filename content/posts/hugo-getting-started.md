@@ -9,9 +9,6 @@ tags: [Hugo]
 
 cover: "/images/posts/cover.jpg"
 
-# 作者
-author: "zhang-shanfeng"
-
 showtoc: true
 comments: true
 

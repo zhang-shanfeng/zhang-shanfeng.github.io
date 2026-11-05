@@ -4,17 +4,10 @@ date: '2026-08-15T14:13:17+08:00'
 draft: false
 lastmod: '2026-08-15T14:13:17+08:00'
 
-# 摘要和描述
-summary: ""
-description: ""
-
 categories: ['notes']
 tags: ['Flutter']
 
 cover: "/images/posts/cover.jpg"
-
-# 作者
-author: "zhang-shanfeng"
 
 showtoc: true
 comments: true

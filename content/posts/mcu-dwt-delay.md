@@ -4,17 +4,10 @@ date: '2026-09-12T10:00:51+08:00'
 draft: false
 lastmod: '2026-09-12T10:00:51+08:00'
 
-# 摘要和描述
-summary: ""
-description: ""
-
 categories: ['electronics']
 tags: [AT32, DWT, us]
 
 cover: "/images/posts/cover.jpg"
-
-# 作者
-author: "zhang-shanfeng"
 
 showtoc: true
 comments: true

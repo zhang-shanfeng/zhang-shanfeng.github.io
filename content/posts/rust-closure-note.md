@@ -4,17 +4,10 @@ date: '2026-09-11T16:19:15+08:00'
 draft: false
 lastmod: '2026-09-11T16:19:15+08:00'
 
-# 摘要和描述
-summary: ""
-description: ""
-
 categories: ['notes',]
 tags: ['Rust', 'Closure', 'Trait']
 
 cover: "/images/posts/cover.jpg"
-
-# 作者
-author: "zhang-shanfeng"
 
 showtoc: true
 comments: true

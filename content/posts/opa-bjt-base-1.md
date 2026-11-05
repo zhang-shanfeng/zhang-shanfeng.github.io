@@ -4,17 +4,10 @@ date: '2026-08-24T23:45:32+08:00'
 draft: true
 lastmod: '2026-08-24T23:45:32+08:00'
 
-# 摘要和描述
-summary: ""
-description: ""
-
 categories: ['electronics']
 tags: ["运放", "BJT"]
 
 cover: "/images/posts/cover.jpg"
-
-# 作者
-author: "zhang-shanfeng"
 
 showtoc: true
 comments: true

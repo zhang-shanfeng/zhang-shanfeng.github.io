@@ -4,17 +4,10 @@ date: '2026-08-15T11:30:25+08:00'
 draft: true
 lastmod: '2026-08-15T11:30:25+08:00'
 
-# 摘要和描述
-summary: ""
-description: ""
-
 categories: ['notes']
 tags: ['Dart']
 
 cover: "/images/posts/cover.jpg"
-
-# 作者
-author: "zhang-shanfeng"
 
 showtoc: true
 comments: true

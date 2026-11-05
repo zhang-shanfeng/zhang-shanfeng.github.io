@@ -4,17 +4,10 @@ date: '2026-09-10T09:53:54+08:00'
 draft: false
 lastmod: '2026-09-10T09:53:54+08:00'
 
-# 摘要和描述
-summary: ""
-description: ""
-
 categories: ['notes']
 tags: [Rust, Result]
 
 cover: "/images/posts/cover.jpg"
-
-# 作者
-author: "zhang-shanfeng"
 
 showtoc: true
 comments: true

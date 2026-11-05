@@ -4,17 +4,10 @@ date: '2026-09-30T11:24:56+08:00'
 draft: true
 lastmod: '2026-09-30T11:24:56+08:00'
 
-# 摘要和描述
-summary: ""
-description: ""
-
 categories: ['electronics']
 tags: ['NE555']
 
 cover: "/images/posts/cover.jpg"
-
-# 作者
-author: "zhang-shanfeng"
 
 showtoc: true
 comments: true

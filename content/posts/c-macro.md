@@ -4,17 +4,10 @@ date: '2026-10-02T20:57:36+08:00'
 draft: false
 lastmod: '2026-10-02T20:57:36+08:00'
 
-# 摘要和描述
-summary: ""
-description: ""
-
-categories: ['frontend', 'electronics', 'notes', 'sharing']
+categories: ['electronics']
 tags: []
 
 cover: "/images/posts/cover.jpg"
-
-# 作者
-author: "zhang-shanfeng"
 
 showtoc: true
 comments: true

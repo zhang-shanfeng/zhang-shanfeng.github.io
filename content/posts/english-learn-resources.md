@@ -4,17 +4,10 @@ date: '2026-09-28T12:20:32+08:00'
 draft: false
 lastmod: '2026-09-28T12:20:32+08:00'
 
-# 摘要和描述
-summary: ""
-description: ""
-
 categories: ['sharing']
 tags: ['English']
 
 cover: "/images/posts/pexels-rk-photography-30313903.jpg"
-
-# 作者
-author: "zhang-shanfeng"
 
 showtoc: true
 comments: true

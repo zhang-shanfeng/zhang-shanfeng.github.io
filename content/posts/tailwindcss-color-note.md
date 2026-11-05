@@ -4,18 +4,10 @@ date: '2026-08-20T11:00:28+08:00'
 draft: false
 lastmod: '2026-08-20T11:00:28+08:00'
 
-# 摘要和描述
-summary: ""
-description: "记录 TailwindCSS V4 中预定义的颜色的使用方法、不透明度的用法、怎么写、注意事项、哪些类可用使用 /num 添加不透明度等。"
-
 categories: ['frontend']
 tags: ["TailwindCSS"]
 
 cover: "/images/posts/tailwindcss.png"
-
-
-# 作者
-author: "zhang-shanfeng"
 
 showtoc: true
 comments: true

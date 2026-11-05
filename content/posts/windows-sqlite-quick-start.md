@@ -4,17 +4,10 @@ date: '2026-09-05T21:00:47+08:00'
 draft: false
 lastmod: '2026-09-05T21:00:47+08:00'
 
-# 摘要和描述
-summary: ""
-description: ""
-
 categories: ['notes',]
 tags: ['SQLite']
 
 cover: "/images/posts/cover.jpg"
-
-# 作者
-author: "zhang-shanfeng"
 
 showtoc: true
 comments: true

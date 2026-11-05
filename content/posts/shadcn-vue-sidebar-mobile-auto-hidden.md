@@ -4,17 +4,10 @@ date: '2026-08-14T16:54:33+08:00'
 draft: false
 lastmod: '2026-08-14T16:54:33+08:00'
 
-# 摘要和描述
-summary: ""
-description: ""
-
 categories: ['frontend']
 tags: ['Shadcn-vue', 'Vue']
 
 cover: "/images/posts/cover.jpg"
-
-# 作者
-author: "zhang-shanfeng"
 
 showtoc: true
 comments: true

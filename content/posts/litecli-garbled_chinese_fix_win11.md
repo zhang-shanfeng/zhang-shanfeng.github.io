@@ -4,17 +4,10 @@ date: '2026-09-06T10:44:26+08:00'
 draft: false
 lastmod: '2026-09-06T10:44:26+08:00'
 
-# 摘要和描述
-summary: ""
-description: ""
-
 categories: ['notes']
 tags: [Litecli]
 
 cover: "/images/posts/cover.jpg"
-
-# 作者
-author: "zhang-shanfeng"
 
 showtoc: true
 comments: true

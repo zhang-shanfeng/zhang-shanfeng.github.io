@@ -4,17 +4,10 @@ date: '2026-09-10T14:20:04+08:00'
 draft: false
 lastmod: '2026-09-10T14:20:04+08:00'
 
-# 摘要和描述
-summary: ""
-description: ""
-
 categories: ['notes']
 tags: ['Rust', 'Iterator']
 
 cover: "/images/posts/cover.jpg"
-
-# 作者
-author: "zhang-shanfeng"
 
 showtoc: true
 comments: true
