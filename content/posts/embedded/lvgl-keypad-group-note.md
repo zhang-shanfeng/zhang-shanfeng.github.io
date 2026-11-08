@@ -30,6 +30,38 @@ keywords: ['LVGL', 'Group', 'Keypad']
 > lv_indev_set_type(keypad_indev, LV_INDEV_TYPE_KEYPAD);
 > ```
 
+## 创建输入设备并配置读取回调函数
+
+```c
+keypad_indev = lv_indev_create();
+lv_indev_set_type(keypad_indev, LV_INDEV_TYPE_KEYPAD);
+lv_indev_set_read_cb(keypad_indev, keypad_read_cb);
+```
+
+```c
+/**************************************************************************************************
+ * @brief 给 LVGL 用的函数
+ *
+ * @param indev
+ * @param data
+ * @date 2026-10-30
+ *************************************************************************************************/
+void keypad_read_cb(lv_indev_t* indev, lv_indev_data_t* data)
+{
+    xSemaphoreTake(g_key_mutex, portMAX_DELAY);
+    if (g_current_lv_key != 0)
+    {
+        data->key = g_current_lv_key;
+        data->state = LV_INDEV_STATE_PRESSED;
+    }
+    else
+    {
+        data->state = LV_INDEV_STATE_RELEASED;
+    }
+    xSemaphoreGive(g_key_mutex);
+}
+```
+
 
 ## 按键回调函数（ESP-IDF 官方的按键组件）
 
@@ -269,3 +301,59 @@ lv_obj_t* ui_create_kv_row_spinbox(lv_obj_t* parent,
     return spinbox;
 }
 ```
+
+## demo 函数
+
+```c
+static void demo1(lv_obj_t* parent)
+{
+    static bool inited = false;
+    if (!inited)
+    {
+        lv_style_init(&style_spinbox_cursor);
+        lv_style_set_bg_opa(&style_spinbox_cursor, 0);
+        lv_style_set_text_opa(&style_spinbox_cursor, 0);
+        lv_style_set_border_width(&style_spinbox_cursor, 0);
+        inited = true;
+    }
+
+    lv_obj_set_style_bg_color(parent, lv_color_black(), 0);
+    lv_obj_set_style_bg_opa(parent, LV_OPA_COVER, 0);
+
+    lv_obj_set_layout(parent, LV_LAYOUT_FLEX);
+    lv_obj_set_flex_flow(parent, LV_FLEX_FLOW_COLUMN);
+
+    struct ui_kv_row_spinbox_cfg_t row_spinbox_cfg =
+        make_row_spinbox_kv_cfg("电流");
+    lv_obj_t* current_spinbox =
+        ui_create_kv_row_spinbox(parent, &row_spinbox_cfg);
+    lv_obj_add_style(current_spinbox, &style_spinbox_cursor, LV_PART_CURSOR);
+
+    row_spinbox_cfg = make_row_spinbox_kv_cfg("电压");
+    lv_obj_t* voltage_spinbox =
+        ui_create_kv_row_spinbox(parent, &row_spinbox_cfg);
+    lv_obj_add_style(voltage_spinbox, &style_spinbox_cursor, LV_PART_CURSOR);
+
+    row_spinbox_cfg = make_row_spinbox_kv_cfg("功率");
+    lv_obj_t* power_spinbox = ui_create_kv_row_spinbox(parent, &row_spinbox_cfg);
+    lv_obj_add_style(power_spinbox, &style_spinbox_cursor, LV_PART_CURSOR);
+
+    lv_obj_add_event_cb(current_spinbox, spinbox_handle, LV_EVENT_CLICKED, NULL);
+    lv_obj_add_event_cb(voltage_spinbox, spinbox_handle, LV_EVENT_CLICKED, NULL);
+    lv_obj_add_event_cb(power_spinbox, spinbox_handle, LV_EVENT_CLICKED, NULL);
+}
+```
+
+## Spinbox 有哪些状态
+
+Spinbox 本身没有定义一套独占的特殊状态枚举，它作为基于 Text Area 的衍生控件，通用对象状态均适用。在实际开发中，最常用来让 Spinbox 显示不同样式的状态主要有：
+
+|状态|含义|典型用途|
+|---|---|---|
+|`LV_STATE_DEFAULT`|默认/空闲|普通显示样式|
+|`LV_STATE_FOCUSED`|获得焦点|编码器或键盘导航选中该控件时，高亮边框或背景|
+|`LV_STATE_EDITED`|编辑模式|进入数字调整状态时，改变光标或边框样式以示区分|
+|`LV_STATE_PRESSED`|被按下|触摸或按键触发时的反馈|
+|`LV_STATE_DISABLED`|禁用|变灰或降低透明度|
+
+此外，`LV_STATE_CHECKED` 等通用状态在 Spinbox 上较少使用，但语法上同样可以绑定样式。
