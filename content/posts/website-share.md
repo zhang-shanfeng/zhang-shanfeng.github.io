@@ -24,3 +24,9 @@ keywords: ['pexels', '网站分享']
 您可以随处使用的免费库存照片和视频。 浏览数以百万计的高质量免版税库存图片和无版权图片。
 
 https://www.pexels.com/zh-cn/
+
+## Penpot 
+
+Penpot 是面向大规模开发数字产品团队的开源设计平台，能够在设计、代码与人工智能工作流程之间实现更深度的协作。
+
+https://design.penpot.app
