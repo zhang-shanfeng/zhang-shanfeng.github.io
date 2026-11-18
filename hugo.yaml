@@ -19,10 +19,10 @@ params:
 
   # images: "img/global-background.jpg"
   author: "Zhang ShanFeng"
-  description: "这是一个个人博客网站，核心关注领域：电子技术与编程开发，另外该网站也是我学习工作中用作记录笔记的地方，欢迎大家访问我的网站。"
+  description: "这里记录我在电子技术、编程开发方面的学习与实践，以及日常的笔记和一点胡思乱想。"
   avatar: "img/personal/avatar.png"
   headerTitle: "杉峰博客"
-  motto: "与其感慨路难行，不如马上出发。"
+  motto: "电子技术、阅读，和一些胡思乱想"
 
 # footerBottomText = ""
 
