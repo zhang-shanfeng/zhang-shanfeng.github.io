@@ -2,7 +2,7 @@ baseURL: https://zhang-shanfeng.github.io
 defaultContentLanguage: zh
 locale: "zh-Hans"
 paginate: 10
-title: Zhang Shanfeng's Blog
+title: 杉峰博客
 theme: dream #PaperMod
 
 
@@ -20,8 +20,8 @@ params:
   # images: "img/global-background.jpg"
   author: "Zhang ShanFeng"
   description: "这是一个个人博客网站，核心关注领域：电子技术与编程开发，另外该网站也是我学习工作中用作记录笔记的地方，欢迎大家访问我的网站。"
-  avatar: "img/personal/avatar.jpg"
-  headerTitle: "Zhang Shanfeng's Blog"
+  avatar: "img/personal/avatar.png"
+  headerTitle: "杉峰博客"
   motto: "与其感慨路难行，不如马上出发。"
 
 # footerBottomText = ""
