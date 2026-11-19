@@ -14,8 +14,8 @@ params:
   lightTheme: "emerald"
   darkTheme: "forest"
 
-  backgroundImage: "img/global-background.jpg"
-  backgroundImageDark: "img/global-background-dark.jpg"
+  # backgroundImage: "img/global-background.jpg"
+  # backgroundImageDark: "img/global-background-dark.jpg"
 
   # images: "img/global-background.jpg"
   author: "Zhang ShanFeng"
@@ -73,6 +73,9 @@ params:
 
 markup:
   goldmark:
+    parser:
+      attribute:
+        block: true
     extensions:
       passthrough:
         enable: true
