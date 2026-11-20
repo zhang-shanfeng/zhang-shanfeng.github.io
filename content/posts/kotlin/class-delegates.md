@@ -105,7 +105,13 @@ class FileLogger : Logger {
 }
 
 val r1 = Robot(ConsoleLogger())
+r1.log("r1")
 val r2 = Robot(FileLogger())
+r2.log("r2")
+
+// 或
+val b = ConsoleLogger()
+Robot(b).log("b")
 ```
 
 这样 `Robot` 就拥有了多种 Logger 接口实现，需要什么实现就传入对应的实现对象即可。
