@@ -12,7 +12,7 @@ cover: "/images/posts/pexels-abdullahoguk-35519304.jpg"
 showtoc: true
 comments: true
 
-keywords: []
+keywords: ['Kotlin', '类委托']
 ---
 
 学习 `Kotlin` 的类委托，了解类委托的工作原理。
